@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: -32px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    background-color: #BEDB39;
+    color: black;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transform: rotate(-3deg);
+}
+
+header > div {
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    padding: 24px;
+    padding-top: 32px;
+    font-weight: 900;
+    /* transform: rotate(3deg); */
+}
+
+
+main {
+    flex: 1;
+}
+
+main > .cover {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.coverA { background: url(../assets/coverA.jpeg) no-repeat center fixed; }
+.coverB { background: url(../assets/coverA.jpg) no-repeat center fixed; }
+
+main > .cover > img {
+    margin: auto;
+    width: 280px;
+    z-index: 999;
+}
+
+main > .cover > .countdown {
+    margin: auto;
+    background-color: red;
+    z-index: 999;
+    display: flex;
+}
+
+main > .cover > .darrow {
+    z-index: 999;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 150%;
+    border: 0 solid black;
+    background-color: #BEDB39;
+    color: #F5822C;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+main > .cover > .darrow:hover {
+    transform: rotate(360deg);
+    opacity: 1.0;
+    color: black;
+    background-color: white;
+}
+
+main > .cover > .darrow > i {
+    margin: auto;
+}
+
+main > .cover > .landing {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+main > .cover > .cover-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 0;
+}
+
+main > .cover > .tone {
+    background-color: rgba(88, 143, 39, 0.7);
+    z-index: 1;
+}
+
+
+#content {
+    background-color: #FD7400;
+    position: relative;
+}
+
+#content > .oblique {
+    z-index: 2;
+    background-color: #FD7400;
+    position: absolute;
+    top: -28px;
+    left: 0; right: 0;
+    height: 64px;
+    transform: rotate(2deg);
+}
+
+#content > .under-oblique {
+    padding: 32px;
+    padding-top: 64px;
+}
