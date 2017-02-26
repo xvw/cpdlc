@@ -53,8 +53,6 @@ main > .cover {
     height: 100vh;
 }
 
-.coverA { background: url(../assets/coverA.jpeg) no-repeat center fixed; }
-.coverB { background: url(../assets/coverA.jpg) no-repeat center fixed; }
 
 main > .cover > img {
     margin: auto;
@@ -64,9 +62,14 @@ main > .cover > img {
 
 main > .cover > .countdown {
     margin: auto;
-    background-color: red;
     z-index: 999;
     display: flex;
+    justify-content: space-between;
+}
+
+main > .cover > .countdown > h2 {
+    margin: 12px;
+    color: white;
 }
 
 main > .cover > .darrow {
@@ -107,6 +110,7 @@ main > .cover > .cover-img {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    transition: all 1.5s ease;
     z-index: 0;
 }
 
@@ -134,4 +138,6 @@ main > .cover > .tone {
 #content > .under-oblique {
     padding: 32px;
     padding-top: 64px;
+    width: 75%;
+    margin: auto;
 }
