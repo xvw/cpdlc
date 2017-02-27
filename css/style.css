@@ -15,28 +15,76 @@ body {
 
 header {
     position: fixed;
-    top: -32px;
+    top: -22px;
     left: 0px;
     right: 0px;
     background-color: white;
-    background-color: #BEDB39;
+    background-color: #004358;
     color: black;
-    height: 86px;
+    height: 92px;
     display: flex;
     flex-direction: column;
     z-index: 9999;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
 }
 
-header > div {
+header > nav {
     margin: auto;
-    text-align: left;
+    text-align: center;
     width: 100%;
     padding: 24px;
-    padding-top: 32px;
+    padding-top: 54px;
     font-weight: 900;
+    display: flex;
+    justify-content: center;
     /* transform: rotate(3deg); */
 }
+
+header > nav > * {
+    margin: 2px;
+    text-decoration: none;
+    color: #FFF;
+    padding: 8px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+header > nav > div > div {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    top: 32px;
+    left: 6px;
+    right: -200px;
+    background-color: #004358;
+    transition: all 0.18s ease;
+    padding: 8px;
+    text-align: left;
+}
+
+header > nav > div > div > a {
+    display: block;
+    margin: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+header > nav > div:hover > div {
+    opacity: 1.0;
+    transform: scaleY(1.0);
+}
+
+header > nav a {
+    transition: all 0.18s ease;
+}
+
+header > nav a:hover {
+    color: #F5822C;
+}
+
 
 
 main {
