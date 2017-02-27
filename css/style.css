@@ -211,6 +211,7 @@ main > .cover > .tone {
 #registration-content > .under-oblique {
     display: flex;
     flex-direction: row;
+    padding-bottom: 72px;
 }
 
 #registration-content > .under-oblique > div {
@@ -235,7 +236,7 @@ h2 {
 #registration-content h2 {
     font-size: 110%;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: px;
 }
 
 .teaser {
@@ -276,7 +277,7 @@ h2 {
     background-color: #FFF;
     position: absolute;
     top: -28px;
-    left: 0; right: 0;
+    left: 0; right: -20px;
     height: 64px;
     transform: rotate(-2deg);
 }
@@ -334,13 +335,14 @@ h2 {
     font-size: 90%;
 }
 
+
+.std-button2,
 .std-button {
-    padding: 8px 64px;
     font-size: 90%;
     border: 0 solid red;
-    border-bottom: 8px solid #1F8A70;
-    border-right: 4px solid #1F8A70;
-    border-left: 2px solid #1F8A70;
+    /* border-bottom: 8px solid #1F8A70; */
+    /* border-right: 4px solid #1F8A70; */
+    /* border-left: 2px solid #1F8A70; */
     border-radius: 6px;
     background-color: #004358;
     color: white;
@@ -349,15 +351,43 @@ h2 {
     transition: all 0.5s ease;
 }
 
-.std-button:hover {
-    padding: 10px 70px;
+.std-button {
+    padding: 8px 64px;
 }
 
-.nl std-button {
-    padding: 4px;
+.std-button2 {
+    padding: 6px;
+}
+
+.std-button:hover {
+    padding: 10px 70px;
 }
 
 input[type="email"] {
     padding: 10px 70px;
     margin-bottom: 12px;
+    border: 0 solid red;
+}
+
+#partenairs {
+    position: relative;
+}
+
+
+#partenairs > .under-oblique {
+    background-color: #004358;
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding: 64px;
+}
+
+#partenairs > .oblique {
+    z-index: 2;
+    background-color: #004358;
+    position: absolute;
+    top: -28px;
+    left: 0; right: -20px;
+    height: 64px;
+    transform: rotate(-2deg);
 }
