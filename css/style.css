@@ -184,12 +184,13 @@ main > .cover > .tone {
 }
 
 
+#registration-content,
 #teaser-content {
     background-color: #FD7400;
     position: relative;
     color: white;
 }
-
+#registration-content > .oblique,
 #teaser-content > .oblique {
     z-index: 2;
     background-color: #FD7400;
@@ -199,7 +200,7 @@ main > .cover > .tone {
     height: 64px;
     transform: rotate(2deg);
 }
-
+#registration-content > .under-oblique,
 #teaser-content > .under-oblique {
     padding: 32px;
     padding-top: 64px;
@@ -207,8 +208,30 @@ main > .cover > .tone {
     margin: auto;
 }
 
+#registration-content > .under-oblique {
+    display: flex;
+    flex-direction: row;
+}
+
+#registration-content > .under-oblique > div:nth-child(1) {
+    align-self: flex-start;
+    flex: 1;
+}
+
+#registration-content > .under-oblique > div:nth-child(2) {
+    align-self: flex-end;
+    flex: 1;
+    text-align: right;
+}
+
+
 h2 {
     margin: 0;
+}
+
+#registration-content h2 {
+    font-size: 110%;
+    text-align: center;
 }
 
 .teaser {
@@ -225,7 +248,7 @@ h2 {
     background-color: #F99749;
     position: absolute;
     top: 70%;  left: 45%; right: 0;
-    padding: 12px;
+    padding: 24px;
     border-radius: 12px;
 }
 
@@ -268,4 +291,41 @@ h2 {
 #ticket-content .subtitle {
     text-align: right;
     font-family: 'Abel', sans-serif;
+}
+
+
+.tickets-choice {
+    margin-top: 72px;
+    margin-bottom: 124px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets-choice > div {
+    /* background-color: red; */
+    text-align: center;
+}
+
+.tickets-choice > div > h3 {
+    font-size: 100px;
+    margin: 24px;
+    background-color: #004358;
+    color: white;
+    width: 120px;
+    text-align: center;
+    height: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    border: 12px solid #1F8A70;
+}
+
+.tickets-choice > div > h4 {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.tickets-choice > div > h5 {
+    margin: 0;
+    font-size: 90%;
 }
