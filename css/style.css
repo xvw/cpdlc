@@ -213,16 +213,19 @@ main > .cover > .tone {
     flex-direction: row;
 }
 
-#registration-content > .under-oblique > div:nth-child(1) {
-    align-self: flex-start;
+#registration-content > .under-oblique > div {
     flex: 1;
+    text-align: center;
 }
 
-#registration-content > .under-oblique > div:nth-child(2) {
-    align-self: flex-end;
-    flex: 1;
-    text-align: right;
-}
+/* #registration-content > .under-oblique > div:nth-child(1) { */
+/*     background-color: green; */
+/* } */
+
+/* #registration-content > .under-oblique > div:nth-child(2) { */
+/*     flex: 1; */
+/*     background-color: yellow; */
+/* } */
 
 
 h2 {
@@ -232,6 +235,7 @@ h2 {
 #registration-content h2 {
     font-size: 110%;
     text-align: center;
+    margin-bottom: 32px;
 }
 
 .teaser {
@@ -328,4 +332,32 @@ h2 {
 .tickets-choice > div > h5 {
     margin: 0;
     font-size: 90%;
+}
+
+.std-button {
+    padding: 8px 64px;
+    font-size: 90%;
+    border: 0 solid red;
+    border-bottom: 8px solid #1F8A70;
+    border-right: 4px solid #1F8A70;
+    border-left: 2px solid #1F8A70;
+    border-radius: 6px;
+    background-color: #004358;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.std-button:hover {
+    padding: 10px 70px;
+}
+
+.nl std-button {
+    padding: 4px;
+}
+
+input[type="email"] {
+    padding: 10px 70px;
+    margin-bottom: 12px;
 }
