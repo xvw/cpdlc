@@ -1,14 +1,354 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    height: 100vh;
-    font-size: 1.4rem;
-    line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  font-family: 'Droid Sans', sans-serif;
+  height: 100vh;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h2, h3, h4, .ftn {
+  font-family: 'Francois One', sans-serif;
+  font-weight: 900;
+}
+
+.stdbutton {
+  margin: 48px;
+  background-color: black;
+  padding: 10px 48px;
+  color: #FFF;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.stdbutton:hover {
+  color: red;
+  padding: 14px 52px;
+}
+
+#due {
+  display: none; 
+}
+/* Menu superieur */
+
+#top-menu {
+  background-color: #004358;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  padding: 4px 12px;
+  position: fixed; 
+  top: 0; left: 0; right: 0;
+  height: 46px;
+  opacity: 0.8;
+  z-index: 9999;
+}
+
+#top-menu a {
+  color: white;
+  transition: all 0.25s ease;
+}
+
+#top-menu a:hover {
+  color: #ff9a00;
+}
+
+#top-menu > div {
+  margin: auto;
+}
+
+#top-menu > div:nth-child(1) {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#top-menu > div:nth-child(2) {
+  flex: 0;
+  text-align: right;
+  display: flex; 
+  flex-direction: row;
+}
+
+#top-menu > div:nth-child(2) i {
+  margin: auto;
+  padding: 0 4px;
+}
+
+#top-menu > div:nth-child(1) > * {
+  margin: 2px;
+  text-decoration: none;
+  color: #FFF;
+  padding: 8px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+#top-menu > div:nth-child(1) > div > div {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    top: 32px;
+    left: 6px;
+    right: -200px;
+    background-color: #004358;
+    transition: all 0.18s ease;
+    padding: 8px;
+    text-align: left;
+}
+
+#top-menu > div:nth-child(1) > div > div > a {
+    display: block;
+    margin: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#top-menu > div:nth-child(1) > div:hover > div {
+    opacity: 1.0;
+    transform: scaleY(1.0);
+}
+
+/* Header */
+header {
+  background-color: black;
+  height: 90vh;
+  position: relative;
+}
+
+header .landing {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+header .cover-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  transition: all 1.5s ease;
+  z-index: 0;
+}
+
+header .tone {
+  background-color: rgba(31, 138, 112, 0.6);
+  z-index: 1;
+}
+
+header .centered {
+  display: flex; 
+  flex-direction: column;
+  z-index: 900;
+  background-color: transparent;
+}
+
+header .centered > * {
+  margin: auto;
+  display: flex; 
+  flex-direction: column;
+  position: relative;
+}
+
+header .logo {
+  width: 280px;
+}
+
+header .darrow {
+  margin: 0 auto;
+  margin-bottom: 64px;
+  background-color: #FFF;
+  color: rgba(31, 138, 112, 0.7);
+  padding: 12px;
+  z-index: 25;
+  border-radius: 50%;
+  transition: all 0.18s ease;
+  opacity: 0.7;
+}
+
+header .darrow:hover {
+  transform: rotate(360deg);
+  opacity: 1.0;
+  background-color: white;
+}
+
+/* Main Section */
+main {
+  position: relative;
+}
+
+.oblique-right, 
+.oblique-left {
+  position: absolute; 
+  z-index: 1050;
+  top: -32px; 
+  left: -20px; 
+  right: -20px;
+  height: 60px;
+  background-color: #004358;
+  color: white;
+  transform: rotate(-2deg);
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+}
+
+.oblique-right > *, 
+.oblique-left > * {
+  margin: auto 0;
+  text-align: left;
+  position: absolute;
+  top: -28px;
+  padding: 4px 12px;
+  background-color: red;
+  transform: rotate(4deg);
+}
+
+.oblique-right {
+  transform: rotate(2deg);
+  background-color: #FFF;
+  top: -68px;
+}
+
+.oblique-right > * {
+  margin: auto 0;
+  text-align: right;
+  top: -28px;
+  right: 54px;
+  transform: rotate(-2deg);
+}
+
+section {
+  z-index: 100;
+  position: relative;
+}
+
+section .content {
+  margin: 52px auto; 
+  padding: 48px 12px;
+  text-align: center;
+}
+
+#teaser .front {
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/texture.png);
+    padding: 140px 64px;
+    text-align: center;
+    /*transform: rotate(-2deg);*/
+}
+
+.tickets {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tickets > div {
+  margin: 18px;
+  padding: 15px;
+}
+
+.tickets > div > * {
+  margin: 0 auto;
+}
+
+.tickets > div > h3 {
+  margin: 22px auto;
+  font-size: 100px;
+  background-color: #004358;
+  color: white;
+  width: 120px;
+  text-align: center;
+  height: 120px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 12px solid #1F8A70;
+}
+
+.tickets > div > h4 {
+  padding: 4px 12px;
+  background-color: #ff9a00;
+  transform: rotate(2deg);
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.tickets > div:nth-child(odd) > h4 {
+    transform: rotate(-2deg);
+}
+
+#partenaires > .content {
+  background-color: #FD7400;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/texture2.png);
+  color: white;
+  padding: 100px;
+  margin-bottom: 0;
+}
+
+#partenaires .oblique-left {
+  background-color: #FFF;
+  top: -30px;
+}
+
+#partenaires .oblique-left h2 {
+  top: 22px;
+}
+
+#newsletter {
+  background-color: #ff9a00;
+  margin-top: 0;
+}
+
+#newsletter .content {
+  margin: 0;
+}
+
+section:last-child .content {
+  margin-bottom: 0;
+}
+
+.real-footer {
+  text-align: center;
+  height: 286px;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: url(../assets/texture3.png);
+  background-color: white;
+}
+
+.count {
+  background-color: transparent;
+  color: #FFF;
+  padding: 12px;
+  font-family: 'Francois One', sans-serif;
+  border: 8px solid #FFF;
+  font-weight: 900; 
+  font-size: 2em;
 }
