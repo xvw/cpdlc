@@ -404,6 +404,11 @@ section:last-child .content {
   text-align: left;
 }
 
+.small-text {
+  width: 60%; 
+  margin: auto;
+}
+
 .long-text strong {
   font-weight: 900; 
   color: rgba(31, 138, 112);
@@ -412,4 +417,15 @@ section:last-child .content {
 .long-text h3 {
   margin-top: 62px; 
   margin-bottom: 22px;
+}
+
+.small-enum {
+  width: 60%; 
+  text-align: left; 
+  margin: 32px auto;
+  padding: 0;
+}
+
+.small-enum > li {
+  list-style: none;
 }
