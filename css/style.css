@@ -248,9 +248,14 @@ section {
 }
 
 section .content {
-  margin: 32px auto; 
+  margin: 0 auto; 
+  margin-top: 32px;
   padding: 48px 12px;
   text-align: center;
+}
+
+#partenaires > .content {
+  margin-top: 0;
 }
 
 #teaser .front {
@@ -450,4 +455,25 @@ section:last-child .content {
 .small-enum-rt > li {
   display: flex;
   margin-bottom: 42px;
+}
+
+#photo-list {
+  margin-top: 64px;
+  background-color: #fafafa;
+  margin-bottom: 0;
+}
+
+#photo-list .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#photo-list img {
+  margin: 12px;
+  height: 220px;
+}
+
+#main {
+  margin-top: 60px;
 }
