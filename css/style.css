@@ -248,7 +248,7 @@ section {
 }
 
 section .content {
-  margin: 52px auto; 
+  margin: 32px auto; 
   padding: 48px 12px;
   text-align: center;
 }
@@ -367,6 +367,9 @@ section:last-child .content {
 }
 
 .content h2 {
-  margin: auto; 
+  margin: 0 auto;
+  margin-bottom: 62px; 
   text-align: center;
+  font-weight: 900; 
+  font-size: 2em;
 }
