@@ -280,10 +280,13 @@ section .content {
 .tickets > div > div {
   margin: 18px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tickets > div > div > * {
   margin: 0 auto;
+  text-align: center;
 }
 
 .tickets > div > div > h3 {
@@ -381,7 +384,32 @@ section:last-child .content {
   flex-wrap: wrap;
 }
 
-.partenaires > img {
-  margin: auto;
+.partenaires > a {
+  margin: auto; 
+  text-align: center;
+}
+
+.partenaires img {
   height: 200px;
+}
+
+.sub-p {
+  text-align: left;
+  width: 80%;
+}
+
+.long-text {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+}
+
+.long-text strong {
+  font-weight: 900; 
+  color: rgba(31, 138, 112);
+}
+
+.long-text h3 {
+  margin-top: 62px; 
+  margin-bottom: 22px;
 }
