@@ -133,7 +133,7 @@ h2, h3, h4, .ftn {
 /* Header */
 header {
   background-color: black;
-  height: 90vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -269,18 +269,24 @@ section .content {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 
 .tickets > div {
+  margin: auto;
+  display: flex;
+}
+
+.tickets > div > div {
   margin: 18px;
   padding: 15px;
 }
 
-.tickets > div > * {
+.tickets > div > div > * {
   margin: 0 auto;
 }
 
-.tickets > div > h3 {
+.tickets > div > div > h3 {
   margin: 22px auto;
   font-size: 100px;
   background-color: #004358;
@@ -293,7 +299,7 @@ section .content {
   border: 12px solid #1F8A70;
 }
 
-.tickets > div > h4 {
+.tickets > div > div > h4 {
   padding: 4px 12px;
   background-color: #ff9a00;
   transform: rotate(2deg);
@@ -302,7 +308,7 @@ section .content {
   margin-bottom: 24px;
 }
 
-.tickets > div:nth-child(odd) > h4 {
+.tickets > div > div:nth-child(odd) > h4 {
     transform: rotate(-2deg);
 }
 
@@ -358,4 +364,9 @@ section:last-child .content {
   border: 8px solid #FFF;
   font-weight: 900; 
   font-size: 2em;
+}
+
+.content h2 {
+  margin: auto; 
+  text-align: center;
 }
