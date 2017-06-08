@@ -426,6 +426,20 @@ section:last-child .content {
   padding: 0;
 }
 
+.small-enum-lt { 
+  text-align: left; 
+  margin: 32px auto;
+  padding: 0;
+  width: 50%;
+}
+
+.small-enum-lt > li,
 .small-enum > li {
   list-style: none;
+}
+
+.small-enum-lt > li > i,
+.small-enum > li > i{
+  list-style: none;
+  margin-right: 20px;
 }
