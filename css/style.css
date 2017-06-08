@@ -373,3 +373,15 @@ section:last-child .content {
   font-weight: 900; 
   font-size: 2em;
 }
+
+.partenaires {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.partenaires > img {
+  margin: auto;
+  height: 200px;
+}
