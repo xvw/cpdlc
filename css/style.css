@@ -426,6 +426,7 @@ section:last-child .content {
   padding: 0;
 }
 
+.small-enum-rt,
 .small-enum-lt { 
   text-align: left; 
   margin: 32px auto;
@@ -433,13 +434,20 @@ section:last-child .content {
   width: 50%;
 }
 
+.small-enum-rt > li,
 .small-enum-lt > li,
 .small-enum > li {
   list-style: none;
 }
 
+.small-enum-rt > li > i,
 .small-enum-lt > li > i,
 .small-enum > li > i{
   list-style: none;
   margin-right: 20px;
+}
+
+.small-enum-rt > li {
+  display: flex;
+  margin-bottom: 42px;
 }
