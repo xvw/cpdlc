@@ -13,7 +13,6 @@ function countdown() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     var x = "" + days + ", " + hours + ":" + minutes + ":" + seconds
-    console.log(x)
     obj.text(x)
   }, 1000)
 }

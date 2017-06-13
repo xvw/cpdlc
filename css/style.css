@@ -525,3 +525,28 @@ section:last-child .content {
   border-radius: 4px;
   font-size: 0.7rem;
 }
+
+.artist-logo {
+  width: 200px;
+}
+
+
+.artist-detail h2 {
+  margin-bottom: 0;
+}
+
+.artist-detail p {
+  width: 90%; 
+  max-width: 720px;
+  margin: auto;
+  margin-bottom: 64px;
+}
+
+.small-menu {
+  margin-bottom: 64px;
+}
+
+.small-menu > a {
+  margin: 0;
+  font-size: 0.8em;
+}
